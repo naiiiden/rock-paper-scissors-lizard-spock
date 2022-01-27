@@ -76,6 +76,37 @@ img {
   .rules {
     display: none;
   }
+  .rules_container {
+    border-radius: 1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30rem;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .rules_container p {
+    display: none;
+  }
+  .rules_desktop {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    border: 2px solid #606e85;
+    background: transparent;
+    padding: 1.25rem 1.5rem;
+    font-size: 1.25rem;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    color: #606e85;
+    font-family: inherit;
+    border-radius: .5rem;
+    height: 2rem;
+    z-index: 100;
+  }
 }
 
 button {
