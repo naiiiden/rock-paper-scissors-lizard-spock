@@ -44,5 +44,21 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .scoreboard {
+        width: 600px;
 
+        .logo {
+            width: 10rem;
+            height: 6rem;
+        }
+
+        .player_points, .computer_points {
+            font-size: 1.2rem;
+        }
+    }
+
+    .announcer {
+        font-size: 1.5rem;
+        height: 3.75rem;
+    }
 }

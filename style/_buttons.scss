@@ -104,3 +104,10 @@ button {
         }
     }    
 }
+
+@media screen and (min-width: 1024px) {
+    button {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}

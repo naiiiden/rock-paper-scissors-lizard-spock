@@ -8,7 +8,7 @@
 
 body {
   overflow: hidden;
-  margin: 1rem 0;
+  margin: 2rem 0;
   width: 100%;
   min-height: 100vh;
   font-family: Barlow Semi Condensed, sans-serif;
@@ -25,7 +25,7 @@ img {
   right: 0;
   left: 0;
   margin: auto;
-  bottom: 10%;
+  bottom: -5rem;
   border: 2px solid #606e85;
   background: transparent;
   color: #606e85;
@@ -70,6 +70,12 @@ img {
 
 .rules_container.show {
   display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .rules {
+    display: none;
+  }
 }
 
 button {
@@ -188,6 +194,13 @@ button {
   visibility: hidden;
 }
 
+@media screen and (min-width: 1024px) {
+  button {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
 .scoreboard {
   border: 2px solid #606e85;
   border-radius: 1rem;
@@ -245,6 +258,23 @@ button {
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .scoreboard {
+    width: 600px;
+  }
+  .scoreboard .logo {
+    width: 10rem;
+    height: 6rem;
+  }
+  .scoreboard .player_points, .scoreboard .computer_points {
+    font-size: 1.2rem;
+  }
+  .announcer {
+    font-size: 1.5rem;
+    height: 3.75rem;
+  }
+}
+
 .buttons_container {
   width: 280px;
   margin: auto;
@@ -298,5 +328,36 @@ button {
   z-index: 1;
   left: 0;
   top: 4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .center_container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .buttons_container {
+    width: 360px;
+    height: 360px;
+  }
+  .buttons_container .pentagon {
+    width: 300px;
+  }
+  .buttons_container .border_rock {
+    right: 2.5rem;
+  }
+  .buttons_container .border_lizard {
+    left: 2.5rem;
+  }
+  .buttons_container .border_paper {
+    right: -.25rem;
+    top: 5rem;
+  }
+  .buttons_container .border_spock {
+    left: -.25rem;
+    top: 5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

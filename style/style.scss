@@ -12,7 +12,7 @@ $header-outline: hsl(217, 16%, 45%);
 
 body {
     overflow: hidden;
-    margin: 1rem 0;
+    margin: 2rem 0;
     width: 100%;
     min-height: 100vh;
     font-family: Barlow Semi Condensed, sans-serif;
@@ -29,7 +29,7 @@ img {
     right: 0;
     left: 0;
     margin: auto;
-    bottom: 10%;
+    bottom: -5rem;
     border: 2px solid $header-outline;
     background: transparent;
     color: $header-outline;
@@ -64,6 +64,12 @@ img {
     }
     
     &.show {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .rules {
         display: none;
     }
 }

@@ -52,3 +52,39 @@
         top: 4rem;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .center_container {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .buttons_container {
+        width: 360px;
+        height: 360px;
+
+        .pentagon {
+            width: 300px;
+        }
+
+        .border_rock {
+            right: 2.5rem;
+        }
+
+        .border_lizard {
+            left: 2.5rem;
+        }
+
+        .border_paper {
+            right: -.25rem;
+            top: 5rem;
+        }
+
+        .border_spock {
+            left: -.25rem;
+            top: 5rem;
+        }
+    }
+}
