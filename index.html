@@ -8,33 +8,47 @@
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 </head>
 <body>
-  
-  Score
-  Rules
-  
-  You Picked
-  The House Picked
-  
-  You Win
-  You Lose
-  
-  Play Again
+  <main>
+    <div class="scoreboard">
+      <div class="player_points">
+        <span>PLAYER SCORE</span>
+        <span id="playerPoints" class="score">
+          01
+        </span>
+      </div>
+      <h1>ROCK,<br> PAPER,<br> SCISSORS,<br> LIZARD,<br> SPOCK</h1>
+      <div class="computer_points">
+        <span>ROBOT SCORE</span>
+        <span id="computerPoints" class="score">
+          01
+        </span>
+      </div>
+    </div>
 
-  <div class="border_rock">
-    <button aria-label="choose rock" id="rock"><img src="images/icon-rock.svg" class="rock" alt="rock"></button>
-  </div>
-  <div class="border_paper">
-    <button aria-label="choose paper" id="paper"><img src="images/icon-paper.svg" class="paper" alt="paper"></button>
-  </div>
-  <div class="border_scissors">
-    <button aria-label="choose scissors" id="scissors"><img src="images/icon-scissors.svg" class="scissors" alt="scissors"></button>
-  </div>
-  <div class="border_lizard">
-    <button aria-label="choose lizard" id="lizard"><img src="images/icon-lizard.svg" class="lizard" alt="lizard"></button>
-  </div>
-  <div class="border_spock">
-    <button aria-label="choose spock" id="spock"><img src="images/icon-spock.svg" class="spock" alt="spock"></button>
-  </div>
+    <p id="winner_announcer" class="announcer"></p>
+
+    <div class="buttons_container">
+      <img src="images/bg-pentagon.svg" class="pentagon" alt="">
+      <div class="border_rock">
+        <button aria-label="choose rock" id="rock"><img src="images/icon-rock.svg" class="rock" alt="rock"></button>
+      </div>
+      <div class="border_paper">
+        <button aria-label="choose paper" id="paper"><img src="images/icon-paper.svg" class="paper" alt="paper"></button>
+      </div>
+      <div class="border_scissors">
+        <button aria-label="choose scissors" id="scissors"><img src="images/icon-scissors.svg" class="scissors" alt="scissors"></button>
+      </div>
+      <div class="border_lizard">
+        <button aria-label="choose lizard" id="lizard"><img src="images/icon-lizard.svg" class="lizard" alt="lizard"></button>
+      </div>
+      <div class="border_spock">
+        <button aria-label="choose spock" id="spock"><img src="images/icon-spock.svg" class="spock" alt="spock"></button>
+      </div>
+    </div>
+  </main>
+
+  <!-- RULES -->
+
   
   <script src="script/script.js"></script>
 </body>

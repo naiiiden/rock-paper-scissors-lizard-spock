@@ -1,0 +1,54 @@
+.buttons_container {
+    width: 280px;
+    margin: auto;
+    height: 285px;
+    position: relative;
+
+    .pentagon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 225px;
+        z-index: -1;
+    }
+
+    .border_rock {
+        position: absolute;
+        z-index: 1;
+        right: 2rem;
+        bottom: 0;
+    }
+    
+    .border_paper {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 4rem;
+    }
+
+    .border_scissors {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .border_lizard {
+        position: absolute;
+        z-index: 1;
+        left: 2rem;
+        bottom: 0;
+    }
+
+    .border_spock {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 4rem;
+    }
+}

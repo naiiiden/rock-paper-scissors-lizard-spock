@@ -7,16 +7,22 @@
 }
 
 body {
+  margin: 1rem 0;
   width: 100%;
   min-height: 100vh;
   font-family: Barlow Semi Condensed, sans-serif;
   background: radial-gradient(ellipse at top, #1f3756, #141539);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 button {
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .border_rock {
@@ -127,5 +133,118 @@ button {
 
 .border_spock #spock .spock {
   visibility: hidden;
+}
+
+.scoreboard {
+  border: 2px solid #606e85;
+  border-radius: 1rem;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.scoreboard h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.scoreboard .player_points, .scoreboard .computer_points {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #fff;
+  width: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-radius: .75rem;
+  padding: .5rem;
+}
+
+.scoreboard .player_points span, .scoreboard .computer_points span {
+  color: #2a46c0;
+}
+
+.scoreboard .player_points span.score, .scoreboard .computer_points span.score {
+  color: #606e85;
+  font-size: 2rem;
+}
+
+.announcer {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem 0;
+  margin: auto;
+  text-align: center;
+}
+
+.buttons_container {
+  width: 280px;
+  margin: auto;
+  height: 285px;
+  position: relative;
+}
+
+.buttons_container .pentagon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 225px;
+  z-index: -1;
+}
+
+.buttons_container .border_rock {
+  position: absolute;
+  z-index: 1;
+  right: 2rem;
+  bottom: 0;
+}
+
+.buttons_container .border_paper {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 4rem;
+}
+
+.buttons_container .border_scissors {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.buttons_container .border_lizard {
+  position: absolute;
+  z-index: 1;
+  left: 2rem;
+  bottom: 0;
+}
+
+.buttons_container .border_spock {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 4rem;
 }
 /*# sourceMappingURL=style.css.map */

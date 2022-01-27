@@ -1,0 +1,49 @@
+.scoreboard {
+    border: 2px solid $header-outline;
+    border-radius: 1rem;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+
+    h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 1.25rem;
+    }
+
+    .player_points, .computer_points {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background: #fff;
+        width: 5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: .75rem;
+        padding: .5rem;
+
+        span {
+            color: $score-text;
+
+            &.score {
+                color: $header-outline;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.announcer {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 0;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+
+}
