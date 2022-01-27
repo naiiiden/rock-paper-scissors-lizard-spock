@@ -1,7 +1,13 @@
 button {
+    cursor: pointer;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
+
+    &:hover {
+        transform: scale(1.35);
+        transition: .2s;
+    }
 }
 
 .border_rock {

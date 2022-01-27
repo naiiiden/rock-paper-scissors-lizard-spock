@@ -39,6 +39,10 @@ img {
     z-index: 100;
 }
 
+.rules_desktop {
+    display: none;
+}
+
 .rules_container {
     display: block;
     position: absolute;
@@ -89,6 +93,8 @@ img {
     }
 
     .rules_desktop {
+        display: block;
+        cursor: pointer;
         position: absolute;
         right: 3rem;
         bottom: 3rem;
@@ -103,6 +109,12 @@ img {
         border-radius: .5rem;
         height: 2rem;
         z-index: 100;
+
+        &:hover {
+            border: 2px solid  #fff;
+            color: #fff;
+            transition: .2s;
+        }
     }
 }
 
