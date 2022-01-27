@@ -1,0 +1,106 @@
+button {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+.border_rock {
+    width: fit-content;
+    border-radius: 50%;
+    padding: .75rem;
+    background: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+
+    #rock {
+        border: none;
+        background-image: url("../images/icon-rock.svg");
+        background-repeat: no-repeat;
+        background-size: 55%;
+        background-position: center;
+
+        .rock {
+            visibility: hidden;
+        }
+    }
+}
+
+.border_paper {
+    width: fit-content;
+    border-radius: 50%;
+    padding: .75rem;
+    background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+
+    #paper {
+        border: none;
+        background-image: url("../images/icon-paper.svg");
+        background-repeat: no-repeat;
+        background-size: 52.5%;
+        background-position: 47.5%;
+
+        .paper {
+            visibility: hidden;
+        }
+    }
+}
+
+.border_scissors {
+    width: fit-content;
+    border-radius: 50%;
+    padding: .75rem;
+    background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+
+    #scissors {
+        border: none;
+        background-image: url("../images/icon-scissors.svg");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center;
+
+        // &:hover {
+        //     transform: scale(1.3);
+        //     transition: .2s;
+        //     // possible hover
+        // }
+
+        .scissors {
+            visibility: hidden;
+        }
+    }
+}
+
+.border_lizard {
+    width: fit-content;
+    border-radius: 50%;
+    padding: .75rem;
+    background: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+
+    #lizard {
+        border: none;
+        background-image: url("../images/icon-lizard.svg");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center;
+
+        .lizard {
+            visibility: hidden;
+        }
+    }
+}
+
+.border_spock {
+    width: fit-content;
+    border-radius: 50%;
+    padding: .75rem;
+    background: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    
+    #spock {
+        border: none;
+        background-image: url("../images/icon-spock.svg");
+        background-repeat: no-repeat;
+        background-position: 57.5%;
+        background-size: 55%;
+
+        .spock {
+            visibility: hidden;
+        }
+    }    
+}
