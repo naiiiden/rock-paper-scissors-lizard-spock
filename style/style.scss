@@ -11,6 +11,7 @@ $header-outline: hsl(217, 16%, 45%);
 }
 
 body {
+    overflow: hidden;
     margin: 1rem 0;
     width: 100%;
     min-height: 100vh;
@@ -21,6 +22,50 @@ body {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.rules {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 10%;
+    border: 2px solid $header-outline;
+    background: transparent;
+    color: $header-outline;
+    font-family: inherit;
+    border-radius: .5rem;
+    height: 2rem;
+    z-index: 100;
+}
+
+.rules_container {
+    display: block;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    p {
+        color: $dark-text;
+        font-weight: 700;
+        font-size: 1.75rem;
+        padding-bottom: 5rem;
+    }
+    
+    &.show {
+        display: none;
+    }
 }
 
 @import "./buttons";

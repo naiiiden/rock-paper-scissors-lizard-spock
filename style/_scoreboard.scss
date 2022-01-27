@@ -1,7 +1,7 @@
 .scoreboard {
     border: 2px solid $header-outline;
     border-radius: 1rem;
-    width: 90%;
+    width: 280px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -9,10 +9,8 @@
     padding: 1rem;
     justify-content: space-between;
 
-    h1 {
-        text-align: center;
-        color: #fff;
-        font-size: 1.25rem;
+    .logo {
+        width: 5rem;
     }
 
     .player_points, .computer_points {
@@ -37,9 +35,10 @@
 }
 
 .announcer {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1rem 1.5rem;
+    height: 4.75rem;
     margin: auto;
     text-align: center;
 }

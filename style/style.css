@@ -7,6 +7,7 @@
 }
 
 body {
+  overflow: hidden;
   margin: 1rem 0;
   width: 100%;
   min-height: 100vh;
@@ -17,6 +18,58 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.rules {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 10%;
+  border: 2px solid #606e85;
+  background: transparent;
+  color: #606e85;
+  font-family: inherit;
+  border-radius: .5rem;
+  height: 2rem;
+  z-index: 100;
+}
+
+.rules_container {
+  display: block;
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5rem;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rules_container p {
+  color: #3b4363;
+  font-weight: 700;
+  font-size: 1.75rem;
+  padding-bottom: 5rem;
+}
+
+.rules_container.show {
+  display: none;
 }
 
 button {
@@ -138,7 +191,7 @@ button {
 .scoreboard {
   border: 2px solid #606e85;
   border-radius: 1rem;
-  width: 90%;
+  width: 280px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,10 +206,8 @@ button {
           justify-content: space-between;
 }
 
-.scoreboard h1 {
-  text-align: center;
-  color: #fff;
-  font-size: 1.25rem;
+.scoreboard .logo {
+  width: 5rem;
 }
 
 .scoreboard .player_points, .scoreboard .computer_points {
@@ -186,9 +237,10 @@ button {
 }
 
 .announcer {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #fff;
-  padding: 1rem 0;
+  padding: 1rem 1.5rem;
+  height: 4.75rem;
   margin: auto;
   text-align: center;
 }

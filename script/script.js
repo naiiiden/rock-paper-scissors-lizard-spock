@@ -1,3 +1,7 @@
+document.getElementById("rules").addEventListener("click", () => {
+    document.getElementById("rules_container").classList.toggle("show");
+});
+
 let playerWins = 1;
 let computerWins = 1;
 
