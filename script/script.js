@@ -145,4 +145,28 @@ function playRound(playerSelection, computerSelection) {
             }
         break;
     }
+    
+    const absoluteWinner = document.getElementById("absolute_winner");
+    const winner = document.getElementById("winner");
+
+    if (computerWins == 11) {
+        absoluteWinner.style.display = "flex";
+        winner.textContent = "COMPUTER HAS WON 10 ROUNDS AND WINS THE GAME";
+        rockButton.disabled = true;
+        paperButton.disabled = true;
+        scissorsButton.disabled = true;
+        lizardButton.disabled = true;
+        spockButton.disabled = true;
+    } else if (playerWins == 11) {
+        absoluteWinner.style.display = "flex";
+        winner.textContent = "PLAYER HAS WON 10 ROUNDS AND WINS THE GAME";
+        rockButton.disabled = true;
+        paperButton.disabled = true;
+        scissorsButton.disabled = true;
+        lizardButton.disabled = true;
+        spockButton.disabled = true;
+    }
 }
+
+
+
