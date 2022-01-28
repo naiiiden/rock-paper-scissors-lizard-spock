@@ -151,20 +151,26 @@ function playRound(playerSelection, computerSelection) {
 
     if (computerWins == 11) {
         absoluteWinner.style.display = "flex";
+        absoluteWinner.style.left = "50%";
         winner.textContent = "COMPUTER HAS WON 10 ROUNDS AND WINS THE GAME";
         rockButton.disabled = true;
         paperButton.disabled = true;
         scissorsButton.disabled = true;
         lizardButton.disabled = true;
         spockButton.disabled = true;
+        document.getElementById("rules").disabled = true;
+        document.getElementById("rules_desktop").disabled = true;
     } else if (playerWins == 11) {
         absoluteWinner.style.display = "flex";
+        absoluteWinner.style.left = "50%";
         winner.textContent = "PLAYER HAS WON 10 ROUNDS AND WINS THE GAME";
         rockButton.disabled = true;
         paperButton.disabled = true;
         scissorsButton.disabled = true;
         lizardButton.disabled = true;
         spockButton.disabled = true;
+        document.getElementById("rules").disabled = true;
+        document.getElementById("rules_desktop").disabled = true;
     }
 }
 
