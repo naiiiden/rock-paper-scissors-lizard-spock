@@ -10,9 +10,9 @@
 ### Desktop Design
 ![desktop](/design/desktop.png)
 ### Desktop Rules
-![desktop rules](/desktop_rules.png)
+![desktop rules](/design/desktop_rules.png)
 ### Desktop Winner
-![desktop winner](/desktop_winner.png)
+![desktop winner](/design/desktop_winner.png)
 
 ## Live Preview
 https://naiiiden.github.io/rock-paper-scissors-lizard-spock/
